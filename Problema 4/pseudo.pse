@@ -1,0 +1,35 @@
+Algoritmo GallonsToLiters
+  /**
+  * A partir de una medida de volumen en galones, retornar la medida en litros.
+  */
+{
+  /**
+   * Bloque de Constantes
+   */
+  GALLONS_TO_LITERS = 3.78541
+
+  /**
+   * Bloque de variables de entrada
+   */
+  flotante gallons;
+
+  /**
+   * Bloque de variables de salida
+   */
+  flotante liters;
+
+  /**
+   * Bloque de Instrucciones
+   */
+  imprimir("¡Hola! Soy un algoritmo para convertir galones a litros. \n");
+  imprimir("Para comenzar: ¿Cuántos galones tienes?\n");
+  leer(gallons);
+  liters = gallons * GALLONS_TO_LITERS;
+  imprimir("Usted tiene ", liters, " litros.\n");
+  imprimir("¡Buen día!\n");
+
+  /**
+   * Fin
+   */
+}
+

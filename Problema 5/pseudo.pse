@@ -1,0 +1,44 @@
+Algoritmo GetDiscountedPrice
+  /**
+  * A partir de un precio, calcular el descuento del 25% y retornar el valor total.
+  */
+{
+  /**
+   * Bloque de Constantes
+   */
+
+  DISCOUNT_PERCENTAGE = 0.25
+
+  /**
+   * Bloque de variables de entrada
+   */
+
+  float grossPrice;
+
+  /**
+   * Bloque de variables de salida
+   */
+
+  float discount, totalPrice;
+
+  /**
+   * Bloque de Instrucciones
+   */
+
+  imprimir("¡Hola! Soy un algoritmo para calcular el 25%% de descuento en un precio dado por ti.");
+  imprimir("Para iniciar, ¿Cuál es el precio inicial?:");
+  leer(grossPrice);
+  discount = grossPrice * DISCOUNT_PERCENTAGE;
+  totalPrice = grossPrice - discount;
+  imprimir("¡Listo! Estos son los resultados:");
+  imprimir("--------------------------------------");
+  imprimir("Precio inicial: B/. ", grossPrice);
+  imprimir("Descuento:     -B/. ", discount);
+  imprimir("Precio final:   B/. ", totalPrice);
+  imprimir("--------------------------------------");
+  imprimir("¡Buen día!");
+  
+  /**
+   * Fin
+   */
+}

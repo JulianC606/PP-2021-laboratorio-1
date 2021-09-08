@@ -1,0 +1,30 @@
+Algoritmo GetDistance
+{
+  /**
+   * Bloque de variables de entrada
+   */
+  flotante speed;
+  entero minutes, hours;
+  
+  /**
+   * Bloque de variables de salida
+   */
+  flotante distance;
+
+  /**
+   * Bloque de Instrucciones
+   */
+  imprimir("¡Hola! Soy un algoritmo diseñado exclusivamente para decirte la distancia recorrida en determinado tiempo.");
+  imprimir("Bueno, empecemos... Por favor, introduce la velocidad:");
+  leer(speed);
+  imprimir("Perfecto!, tu velocidad es de ", speed, " km/h. ¿Por cuántas horas estuviste en esa velocidad?");
+  leer(hours);
+  imprimir("¡Listo! Ahora, ¿Cuántos minutos?");
+  distance = speed * (hours + (10 * minutes) / 60);
+  imprimir("La distancia recorrida fue de ", distance, "km en un tiempo de ", hours, ":", minutes, " horas a ", speed, " km/h.");
+  imprimir("Espero haber sido de ayuda, ¡gracias!");
+  imprimir('Ten un buen día');
+  /**
+   * Fin
+   */
+}

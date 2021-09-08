@@ -1,0 +1,39 @@
+Algoritmo GetNetSalary
+  /**
+  * A partir de un salario bruto, retorna en pantalla el salario con el descuento educativo
+  * aplicado.
+  */
+{
+  /**
+   * Bloque de Constantes
+   */
+    ED_DESC = 0.125;
+
+  /**
+   * Bloque de variables de entrada
+   */
+
+  flotante grossSalary;
+  
+  /**
+   * Bloque de variables de salida
+   */
+
+  flotante netSalary, discount;
+
+  /**
+   * Bloque de Instrucciones
+   */
+  
+  imprimir("¡Hola! Soy un algoritmo diseñado para ayudarte a obtener tu salario neto después del descuento");
+  imprimir("del seguro educativo (1.25%). Bueno, empecemos... ¿Cuánto fue tu salario bruto?");
+  leer(grossSalary);
+  discount = grossSalary * ED_DESC;
+  netSalary = grossSalary - discount;
+  imprimir("Este mes obtendras: B/. ", netSalary," y te descontaron -B/. ", discount, ".");
+  imprimir("Buen día.");
+
+  /**
+   * Fin
+   */
+}
