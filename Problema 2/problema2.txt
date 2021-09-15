@@ -1,0 +1,28 @@
+Algoritmo FahrenheitToCelsius
+/**
+* A partir de una temperatura en Fahrenheit (°F) convertirla a su equivalente en Celsius (°C).
+*/
+{
+  /**
+   * Bloque de variables de entrada
+   */
+  flotante fahrenheit;
+
+  /**
+   * Bloque de variables de salida
+   */
+  flotante celsius;
+
+  /**
+   * Bloque de Instrucciones
+   */
+  imprimir("¡Hola! Soy un algoritmo para calcular la conversión de Fahrenheit a Celsius\n");
+  imprimir("Para comenzar, ¿Cuál sería la temperatura en Fahrenheit (°F)?:\n");
+  leer(fahrenheit);
+  celsius = ((fahrenheit - 32) * 5) / 9;
+  imprimir("Perfecto, la temperatura en celsius es: ",celsius,"°C\n", celsius);
+  imprimir("¡Buen día!");
+  /**
+   * Fin
+   */
+}

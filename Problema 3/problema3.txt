@@ -1,0 +1,43 @@
+Algoritmo GetTotalPriceOfTwoProducts
+  /**
+  * A partir del precio de dos productos, retorna el precio total con impuesto del 7%.
+  */
+{
+  /**
+   * Bloque de Constantes
+   */
+  ITBMS = 0.07;
+
+  /**
+   * Bloque de variables de entrada
+   */
+  flotante product1, product2;
+
+  /**
+   * Bloque de variables de salida
+   */
+  flotante tax, subtotal, total;
+
+  /**
+   * Bloque de Instrucciones
+   */
+  imprimir("¡Hola! Soy un algoritmo para calcular el impuesto de 2 productos.\n");
+  imprimir("Para comenzar, ¿Cuál es el precio del producto 1?:\n");
+  leer("%f", &product1);
+  imprimir("Ahora, ¿Cuál es el precio del producto 2?:\n");
+  leer("%f", &product2);
+  subtotal = product1 + product2;
+  tax = subtotal * ITBMS;
+  total = subtotal + tax;
+  imprimir("Perfecto, este es el total:\n");
+  imprimir("----------------------------------------------\n");
+  imprimir("Producto 1:   B/. ", product1, "\n");
+  imprimir("Producto 2:   B/. ", product2, "\n");
+  imprimir("Subtotal:     B/. ", subtotal, "\n");
+  imprimir("Impuestos:    B/. ", tax, "\n");
+  imprimir("Total         B/. ", total,"\n", );
+  imprimir("----------------------------------------------\n");
+  /**
+   * Fin
+   */
+}

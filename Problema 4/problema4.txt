@@ -6,7 +6,7 @@ Algoritmo GallonsToLiters
   /**
    * Bloque de Constantes
    */
-  GALLONS_TO_LITERS = 3.78541
+  GALLONS_TO_LITERS = 3.78541;
 
   /**
    * Bloque de variables de entrada
