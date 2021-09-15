@@ -18,7 +18,7 @@ int main(void)
   /**
    * Bloque de variables de entrada
    */
-  float pricePerHour;
+  float fare;
 
   /**
    * Bloque de variables de salida
@@ -30,23 +30,21 @@ int main(void)
    */
   printf("¡Hola! Soy un algoritmo para calcular tu salario total.\n");
   printf("Para empezar, me podrías decir: ¿Cuánto ganas por hora? \n");
-  scanf("%f", &pricePerHour);
-  weeklySalary = pricePerHour * HOURS_PER_WEEK;
-  dailySalary = pricePerHour * HOURS_PER_DAY;
+  scanf("%f", &fare);
+  weeklySalary = fare * HOURS_PER_WEEK;
+  dailySalary = fare * HOURS_PER_DAY;
   monthlySalary = weeklySalary * WEEKS_PER_MONTH;
   annualSalary = monthlySalary * MONTHS_PER_YEAR;
   printf("Listo, esta sería la información de tu salario:\n");
-  printf("-----------------------------------------------");
-  printf(" Con un pago por hora de: B./ %.2f ", pricePerHour);
   printf("-----------------------------------------------\n");
+  printf("Con un pago por hora de: B./ %.2f\n", fare);
   printf("Por día ganas: B/. %.2f\n", dailySalary);
   printf("Por semana ganas: B/. %.2f\n", weeklySalary);
   printf("Por mes ganas: B/. %.2f\n", monthlySalary);
   printf("Por año ganas: B/. %.2f**\n", annualSalary);
-  printf("-----------------------------------------------");
-  printf("-----------------------------------------------");
   printf("-----------------------------------------------\n");
-  printf("** Estamos asumiendo que tu empresa paga 28 días al mes y 13 meses por año, como lo establece la ley.\n");
+  printf("** Estamos asumiendo que tu empresa paga 28 días al mes ");
+  printf("y 13 meses por año, como lo establece la ley.\n");
   printf("¡Buen día!\n");
   /**
    * Fin

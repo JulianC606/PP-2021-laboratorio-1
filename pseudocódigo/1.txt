@@ -1,0 +1,38 @@
+Algoritmo GetAverageNote
+/**
+* A partir de 5 notas dadas por el usuario, obtiene el promedio.
+*/
+{
+  /**
+   * Bloque de variables de entrada
+   */
+  flotante notes[5];
+
+  /**
+   * Bloque de variables de control
+   */
+  entero idx;
+
+  /**
+   * Bloque de variables de salida
+   */
+  flotante average;
+
+  /**
+   * Bloque de Instrucciones
+   */
+  imprimir("¡Hola! Soy un algoritmo para el promedio de 5 notas.\n");
+  idx = 0;
+  hacer {
+    imprimir("¿Cuál sería la nota #%d?: ", (idx + 1));
+    leer(notes[idx]);
+    average += notes[idx] / 5;
+    imprimir("\n");
+    idx++;
+  } mientras (idx < 5);
+  imprimir("Perfecto, el promedio final es: ", average, "\n", );
+  imprimir("¡Buen día!\n");
+  /**
+   * Fin
+   */
+}

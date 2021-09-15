@@ -24,12 +24,12 @@ int main(void)
   /**
    * Bloque de Instrucciones
    */
-  printf("¡Hola! Soy un algoritmo diseñado para ayudarte a obtener tu salario neto después del descuento \n");
-  printf("del seguro educativo (1.25%%). Bueno, empecemos... ¿Cuánto fue tu salario bruto?\n");
+  printf("¡Hola! Soy un algoritmo diseñado para ayudarte a obtener tu salario neto después del descuento");
+  printf(" del seguro educativo (1.25%%). Bueno, empecemos... ¿Cuánto fue tu salario bruto?\n");
   scanf("%f", &grossSalary);
   discount = grossSalary * ED_DESC;
   netSalary = grossSalary - discount;
-  printf("Este mes obtendras: B/. %0.2f y te descontaron -B/. %.2f\n", netSalary, discount);
+  printf("Este mes obtendrás: B/. %0.2f y te descontarán -B/. %.2f\n", netSalary, discount);
   printf("Buen día.\n");
   /**
    * Fin

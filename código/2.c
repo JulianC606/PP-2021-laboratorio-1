@@ -22,7 +22,7 @@ int main(void)
   scanf("%f", &fahrenheit);
   celsius = ((fahrenheit - 32) * 5) / 9;
   printf("Perfecto, la temperatura en celsius es: %.2f°C\n", celsius);
-  printf("¡Buen día!");
+  printf("¡Buen día!\n");
   /**
    * Fin
    */

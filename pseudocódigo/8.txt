@@ -1,0 +1,45 @@
+Algoritmo GetSalary
+  /**
+  * Retorna el valor del salario diario, semanal, mensual y anual a partir del valor por hora.
+  */
+{
+  /**
+   * Bloque de Constantes
+   */
+  HOURS_PER_DAY = 8;
+  HOURS_PER_WEEK = 45;
+  WEEKS_PER_MONTH = 4;
+  MONTHS_PER_YEAR = 13;
+  /**
+   * Bloque de variables de entrada
+   */
+  flotante fare;
+  /**
+   * Bloque de variables de salida
+   */
+  flotante annualSalary, monthlySalary, weeklySalary, dailySalary;
+  /**
+   * Bloque de Instrucciones
+   */
+  imprimir("¡Hola! Soy un algoritmo para calcular tu salario total.\n");
+  imprimir("Para empezar, me podrías decir: ¿Cuánto ganas por hora?\n");
+  leer(fare);
+  weeklySalary = fare * HOURS_PER_WEEK;
+  dailySalary = fare * HOURS_PER_DAY;
+  monthlySalary = weeklySalary * WEEKS_PER_MONTH;
+  annualSalary = monthlySalary * MONTHS_PER_YEAR;
+  imprimir("Listo, esta sería la información de tu salario:\n");
+  imprimir(" Con un pago por hora de: B./ ", fare, "\n");
+  imprimir("-----------------------------------------------\n");
+  imprimir("Por día ganas: B/. ", dailySalary, "\n");
+  imprimir("Por semana ganas: B/. ", weeklySalary, "\n");
+  imprimir("Por mes ganas: B/. ", monthlySalary, "\n");
+  imprimir("Por año ganas: B/. ", annualSalary, "**\n");
+  imprimir("-----------------------------------------------\n");
+  imprimir("** Estamos asumiendo que tu empresa paga 28 días al mes ");
+  imprimir("y 13 meses por año, como lo establece la ley.\n");
+  imprimir("¡Buen día!\n");
+  /**
+   * Fin
+   */
+}

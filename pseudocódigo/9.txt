@@ -30,7 +30,7 @@ Algoritmo GetNetSalary
   leer(grossSalary);
   discount = grossSalary * ED_DESC;
   netSalary = grossSalary - discount;
-  imprimir("Este mes obtendras: B/. ", netSalary," y te descontaron -B/. ", discount, ".");
+  imprimir("Este mes obtendrás: B/. ", netSalary," y te descontarán -B/. ", discount, ".");
   imprimir("Buen día.");
 
   /**

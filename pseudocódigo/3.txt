@@ -23,9 +23,9 @@ Algoritmo GetTotalPriceOfTwoProducts
    */
   imprimir("¡Hola! Soy un algoritmo para calcular el impuesto de 2 productos.\n");
   imprimir("Para comenzar, ¿Cuál es el precio del producto 1?:\n");
-  leer("%f", &product1);
+  leer(product1);
   imprimir("Ahora, ¿Cuál es el precio del producto 2?:\n");
-  leer("%f", &product2);
+  leer(product2);
   subtotal = product1 + product2;
   tax = subtotal * ITBMS;
   total = subtotal + tax;

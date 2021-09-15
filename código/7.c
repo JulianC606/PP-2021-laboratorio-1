@@ -26,7 +26,7 @@ int main(void)
    * Bloque de Instrucciones
    */
 
-  printf("¡Hola! Soy un algoritmo que te ayudara a saber el precio total de un producto.\n");
+  printf("¡Hola! Soy un algoritmo que te ayudará a saber el precio total de un producto.\n");
   printf("Para iniciar, me podrías decir: ¿Cuál es el precio inicial?\n");
   scanf("%f", &grossPrice);
   tax = grossPrice * TAX_PERCENTAGE;

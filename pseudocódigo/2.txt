@@ -20,7 +20,7 @@ Algoritmo FahrenheitToCelsius
   imprimir("Para comenzar, ¿Cuál sería la temperatura en Fahrenheit (°F)?:\n");
   leer(fahrenheit);
   celsius = ((fahrenheit - 32) * 5) / 9;
-  imprimir("Perfecto, la temperatura en celsius es: ",celsius,"°C\n", celsius);
+  imprimir("Perfecto, la temperatura en celsius es: ",celsius,"°C\n");
   imprimir("¡Buen día!");
   /**
    * Fin

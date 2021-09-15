@@ -1,6 +1,6 @@
 /**
  * Algoritmo GetAverageNote
- * A partir de 5 notas dadas por el usuario, obtener el promedio.
+ * A partir de 5 notas dadas por el usuario, obtiene el promedio.
  */
 #include <stdio.h>
 
@@ -24,15 +24,18 @@ int main(void)
    * Bloque de Instrucciones
    */
   printf("¡Hola! Soy un algoritmo para el promedio de 5 notas.\n");
-  for (idx = 0; idx < 5; idx++)
+  idx = 0;
+  do
   {
     printf("¿Cuál sería la nota #%d?: ", (idx + 1));
     scanf("%f", &notes[idx]);
     average += notes[idx] / 5;
     printf("\n");
-  }
+    idx++;
+  } while (idx < 5);
+
   printf("Perfecto, el promedio final es: %.2f\n", average);
-  printf("¡Buen día!");
+  printf("¡Buen día!\n");
   /**
    * Fin
    */

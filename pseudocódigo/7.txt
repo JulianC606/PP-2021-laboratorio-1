@@ -1,29 +1,24 @@
 Algoritmo TaxCalculator
   /**
-  * Recibe un precio y devuelve el precio total con el impuesto (%7)
+  * Recibe un precio y devuelve el precio total con el impuesto (7%)
   */
 {
   /**
    * Bloque de Constantes
    */
   TAX_PERCENTAGE = 0.07;
-
   /**
    * Bloque de variables de entrada
    */
   flotante grossPrice;
-  
   /**
    * Bloque de variables de salida
    */
-
   flotante tax, totalPrice;
-
   /**
    * Bloque de Instrucciones
    */
-
-  imprimir("¡Hola! Soy un algoritmo que te ayudara a saber el precio total de un producto.");
+  imprimir("¡Hola! Soy un algoritmo que te ayudará a saber el precio total de un producto.");
   imprimir("Para iniciar, me podrías decir: ¿Cuál es el precio inicial?");
   leer(grossPrice);
   tax = grossPrice * TAX_PERCENTAGE;
@@ -34,10 +29,8 @@ Algoritmo TaxCalculator
   imprimir("Impuesto: B/. ", tax);
   imprimir("Total:    B/. ", totalPrice);
   imprimir("--------------------------------");
-
   imprimir("¡Gracias por utilizarme!");
   imprimir("¡Buen día!");
-  
   /**
    * Fin
    */

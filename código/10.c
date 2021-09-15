@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * Algoritmo GetDistance
  */
@@ -9,19 +8,17 @@ int main(void)
    * Bloque de variables de entrada
    */
   float speed, hours, minutes;
-
   /**
    * Bloque de variables de salida
    */
   float distance;
-
   /**
    * Bloque de Instrucciones
    */
   printf("¡Hola! Soy un algoritmo diseñado exclusivamente para decirte la distancia recorrida en determinado tiempo. \n");
   printf("Bueno, empecemos... Por favor, introduce la velocidad:  \n");
   scanf("%f", &speed);
-  printf("Perfecto!, tu velocidad es de %.2f km/h. ¿Por cuántas horas estuviste en esa velocidad? \n", speed);
+  printf("¡Perfecto!, tu velocidad es de %.2f km/h. ¿Por cuántas horas estuviste en esa velocidad? \n", speed);
   scanf("%f", &hours);
   printf("¡Listo! Ahora, ¿Cuántos minutos? \n");
   scanf("%f", &minutes);
